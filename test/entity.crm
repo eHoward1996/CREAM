@@ -1,0 +1,15 @@
+entity basic_entity <- ()  {
+    to = ''
+    
+    init -> (t)  {
+        self.to = t
+    }
+    
+    say_hello -> () {
+        return 'hello'
+    }
+
+}
+
+b = basic_entity('world')
+print(b.say_hello())

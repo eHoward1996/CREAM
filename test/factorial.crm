@@ -1,0 +1,60 @@
+factorial_with_recursion -> (n)   {
+    (n == 1) ? {
+        return 1
+    }
+    (n == 0) ?? {
+        return 1
+    }
+    ?!  {
+        return n * factorial_with_recursion(n - 1)
+    }
+}
+
+factorial_with_loop -> (n)  {
+    f = 1
+    while (n > 0)  {
+        f *= n
+        n -= 1
+    }
+    return f
+}
+
+factorial_with_in -> (n)  {
+    f = 1
+    while (i in 1...10) {
+        f *= i
+    }
+    return f
+}
+
+factorial_with_in_again -> (n)  {
+    f = 1
+    while (i in n)  {
+        f *= i
+    }
+    return f
+}
+
+factorial_with_range -> (a, b)  {
+    (a == b) ?  {
+        return a
+    }
+    (a > b) ??  {
+        return a * factorial_with_range(a - 1, b)
+    }
+}
+
+print("RECURSION")
+print(factorial_with_recursion(10))
+
+print("LOOPS")
+print(factorial_with_loop(10))
+
+print("IN")
+print(factorial_with_in(10))
+
+print("IN AGAIN")
+print(factorial_with_in_again([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+print("With Range")
+print(factorial_with_range(10, 1))

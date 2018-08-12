@@ -1,0 +1,35 @@
+merge -> (arr1, arr2)   {
+    result = []
+    i = 0
+    j = 0
+    while (i < len(arr1) && j < len(arr2)) {
+        (arr1[i] < arr2[j]) ?   {
+            result = result + [arr1[i]]
+            i = i + 1
+        }
+        ?!  {
+            result = result + [arr2[j]]
+            j = j + 1
+        }
+    }
+    while (k in i..len(arr1))   {
+        result = result + [arr1[k]]
+    }
+    while (k in j..len(arr2))   {
+        result = result + [arr2[k]]
+    }
+    return result
+}
+
+merge_sort -> (arr) {
+    alen = len(arr)
+    (alen <= 1) ?   {
+        return arr
+    }
+    m = int(alen / 2)
+    left = merge_sort(slice(arr, 0, m))
+    right = merge_sort(slice(arr, m, alen))
+    merge(left, right)
+}
+
+merge_sort([3, 0, 6, 5, 9, 4, 2, 8, 1, 7])
