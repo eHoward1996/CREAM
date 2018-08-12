@@ -6,7 +6,15 @@ CREAM is the best programming language you never thought you needed.
 Inspired by the great teaching and style of the Wu-Tang Clan, CREAM  
 is a dynamic powerhouse programming language. CREAM is designed to  
 be the cross between Python and Java that you never wanted.  
-  
+
+## Quickstart and Setup
+
+To run programs in CREAM you need to have Python3.6 installed.  
+There are no current outside dependencies needed.  
+To run a program written in CREAM go to a command line and run  
+`python -m CREAM <file_name.crm>`  
+Note that the only files CREAM recognizes are `.crm` because reasons.
+
 ## Keywords / Special Characters
 
 CREAM (somehow) shares very little keywords with Java or Python... so pay attention  
