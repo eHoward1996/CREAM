@@ -22,13 +22,13 @@ CREAM (somehow) shares very little keywords with Java or Python... so pay attent
 | KeyWord / Character |       Meaning      |
 |---------------------|--------------------|
 |'return' | returns some value             |
-|'?'      | beginning of an if statement   |
+|'?'      | beginning of an `if` statement   |
 |'??'     | else if block                  |
 |'?!'     | else block                     |
-|'while'  | the only looping structure in CREAM because for loops are too mainstream  |
+|'while'  | the only looping structure in CREAM because `for` loops are too mainstream  |
 |'exit'   | same as a break statement in Java or Python exit just seemed like it made more sense  |
 |'next'   | same as continue in Java or Python |
-|'in'     | used as in Python's for loop (examples below) |
+|'in'     | used as in Python's `for` loop (examples in `test` directory) |
 |'match'  | (not implemented, but it's a keyword) |
 |'when'   | (not implemented, but it's a keyword) |
 |'true'   | tried and true true  |
